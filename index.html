@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./img/icons8-licorne-qui-vomit-48.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire c'est mon genre</title>
+</head>
+
+<body class="bg-dark">
+
+    <main class="container ">
+        <form action="#" method="post" id="formValidation" autocomplete="off">
+            <div class=" row mt-5">
+                <div class="col-6 border d-flex justify-content-center p-2">
+                    <img src="./img/noimage.png" class="col-6 rounded placePhoto  img-fluid" alt="">
+                </div>
+                <div class="col-6 border d-flex flex-column justify-content-center">
+                    <label class="text-white mb-2">Charger une photo</label>
+                    <br>
+                    <input type="file" name="photo" class="w-50 form-control bg-info rounded img-fluid" id="photo" required>
+
+                </div>
+            </div>
+            <section>
+                <h1 class="text-white m-3 ">QUI ETES VOUS?</h1>
+
+                <!-- NOM -->
+                <div class="row ">
+                    <div class="col-6 border p-4 fs-5 text-white fw-semibold">
+                        <label for="nom">Nom :</label>
+                    </div>
+                    <div class="col-6 border p-4">
+                        <input type="text" name="nom" id="nom" required placeholder="Nom" required>
+                    </div>
+                </div>
+
+                <!-- Prenom -->
+
+                <div class="row">
+                    <div class="col-6 border p-4 fs-5 text-white fw-semibold">
+                        <label for="prenom">Prénom :</label>
+                    </div>
+                    <div class="col-6 border p-4">
+                        <input type="text" name="prenom" id="prenom" required placeholder="Prénom" required>
+                    </div>
+                </div>
+
+                <!-- Date de naissance -->
+
+                <div class="row">
+                    <div class="col-6 border p-4 fs-5 text-white fw-semibold">
+                        <label for="birthDate">Date de naissance :</label>
+                    </div>
+                    <div class="col-6 border p-4">
+                        <input type="text" name="dateNaissance" id="dateNaissance" required placeholder="dd/mm/aaaa"
+                            required>
+                        <!-- <span class="error-message" id="dateError">Cette date n'est pas correcte</span> -->
+                    </div>
+                </div>
+
+                <!-- Mail -->
+
+                <div class="row">
+                    <div class="col-6 border p-4 fs-5 text-white fw-semibold">
+                        <label for="mail">Email :</label>
+                    </div>
+                    <div class="col-6 border p-4">
+                        <input type="email" accept=".jpg, .png, .gif, .jpeg" name="email" id="email" required
+                            placeholder="bidule@syte.com" required>
+                    </div>
+                </div>
+
+                <h1 class="text-white m-3">QUEL EST VOTRE GENRE.............?</h1>
+
+                <!--  Bouton  -->
+                <div class="border row">
+                    <div class=" p-4">
+                        <input class="form-check-input" type="radio" name="genre" id="choix1" value="Femme">
+                        <label class="form-check-label text-white fs-6 px-2" for="choix1">
+                            Femme
+                        </label>
+
+                        <input class="form-check-input" type="radio" name="genre" id="choix2" value="Homme">
+                        <label class="form-check-label text-white fs-6 px-2" for="choix2">
+                            Homme
+                        </label>
+
+                        <input class="form-check-input" type="radio" name="genre" id="choix3" value="Indeterminé"
+                            checked>
+                        <label class="form-check-label text-white fs-6 px-2" for="choix3">
+                            Indeterminé
+                        </label>
+
+                        <input class="form-check-input" type="radio" name="genre" id="choix4" value="Licornesque">
+                        <label class="form-check-label text-white fs-6 px-2" for="choix4">
+                            Licornesque
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-6 border p-3">
+                        <button type="submit" class="btn btn-primary p-2 fs-5 ">Confirmer</button>
+                    </div>
+                    <div class="col-6 border p-3">
+                        <button type="reset" class="btn btn-danger p-2 fs-5 reset">Annuler</button>
+                    </div>
+                </div>
+            </section>
+
+        </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

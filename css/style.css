@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Justice' ;
+    src: url(../img/JusticeLeague-25m8.ttf) format(truetype);
+}
+
+h1 {
+    font-family: 'Justice';
+
+}
+/* donne la largeur aux champs pour éviter que ça bouge quand message erreur */
+section div{
+    height: 80px;
+}
+
+/* Messages d'erreur en rouge sous les champs requis*/
+label.error{
+    font-weight: 500;
+    display: block;
+    color: red;
+}
+
+/* Bordures si les champs sont biens remplis ou non via js highlight et unhighlight */
+input.error {
+    border: 2px solid red;
+    color: red;
+}
+
+input.valid {
+    border: 2px solid green;
+    color: green;
+}
+
+/* Taille de l'image */
+.placePhoto{
+    object-fit: cover;
+    height: auto;
+    width: 250px;
+}
